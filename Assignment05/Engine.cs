@@ -40,7 +40,7 @@ namespace Assignment05
 		public static bool rendering = false;
 		public static bool updating = false;
 		public static bool resetting = false;
-		//public static SoundPlayer theme = new SoundPlayer(Properties.Resources.dwt);
+		public static SoundPlayer theme = new SoundPlayer(Properties.Resources.dwt);
 
 		public Engine()
 		{

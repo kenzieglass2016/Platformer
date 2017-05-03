@@ -74,5 +74,11 @@ namespace Assignment05.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        internal static System.IO.UnmanagedMemoryStream dwt {
+            get {
+                return ResourceManager.GetStream("dwt", resourceCulture);
+            }
+        }
     }
 }
