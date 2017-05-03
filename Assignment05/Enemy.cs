@@ -11,14 +11,14 @@ namespace Assignment05
 		private Boolean left = false;
 		private Random r = new Random();
 
-        public Enemy() : base(Properties.Resources.dalek)
+        public Enemy() : base(Properties.Resources.silent)
 		{
 			Vx = 4f;
 			Gy = 0.25f;
 			Engine.enemyCount++;
 		}
 
-        public Enemy(int x, int y) : base(Properties.Resources.dalek, x, y)
+        public Enemy(int x, int y) : base(Properties.Resources.silent, x, y)
 		{
 			Vx = 4f;
 			Gy = 0.25f;
@@ -67,7 +67,7 @@ namespace Assignment05
 			X -= Vx;
 			foreach (CollisionSprite s in list)
 			{
-				if (s.GetType() == typeof(Elephant)) s.Kill();
+                if (s.GetType() == typeof(Doctor)) s.Kill();
 			}
 		}
 

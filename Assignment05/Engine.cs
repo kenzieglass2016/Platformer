@@ -18,7 +18,7 @@ namespace Assignment05
         public static Doctor doctor = new Doctor(100, 100);
 		public static Sprite canvas = new Sprite();
 		public static int enemyCount = 0;
-		public static Enemy dalek = new Enemy(1000, 200);
+		public static Enemy silent = new Enemy(1000, 200);
 		public static Rectangle rect = new Rectangle(0, 0, 1400, 900, 200);
 		public static bool win = false;
 		public static bool lose = false;
@@ -83,9 +83,9 @@ namespace Assignment05
 				box = new Box(1200, i * 100);
 				canvas.csAdd(box);
 			}
-            dalek = new Enemy(1000, 200);
+            silent = new Enemy(1000, 200);
 			enemyCount = 1;
-            canvas.csAdd(dalek);
+            canvas.csAdd(silent);
 			canvas.add(rect);
 			canvas.add(text);
 			canvas.add(loss);

@@ -20,12 +20,7 @@ namespace Assignment05
         static void Main()
         {
             Program.canvas.csAdd(doctor);
-            /*List<int> xs = new List<int> { 000, 100, 200, 300, 400, 500, 000, 100, 200, 300, 400, 500, 000, 000, 000, 000, 500, 500, 500, 500 };
-            List<int> ys = new List<int> { 500, 500, 500, 500, 500, 500, 000, 000, 000, 000, 000, 000, 100, 200, 300, 400, 100, 200, 300, 400 };
-            for(int i = 0; i < xs.Count; i++) {
-                Box box = new Box(xs[i], ys[i]);
-                Program.canvas.csAdd(box);
-            }*/
+
             for(int i = 0; i < 13; i++)
             {
                 Box box = new Box(i * 100, 0);
@@ -40,13 +35,8 @@ namespace Assignment05
                 box = new Box(1200, i * 100);
                 canvas.csAdd(box);
             }
-            Program.canvas.csAdd(dalek);
+            Program.canvas.csAdd(silent);
             Application.Run(new Program());
-            /*Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Program program = new Program();
-            program.Canvas.add(new Elephant(0, 0));
-            Application.Run(new Program());*/
         }
     }
 }

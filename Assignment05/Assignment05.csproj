@@ -86,11 +86,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="niceBullet.cs" />
-    <None Include="Resources\dalek.png" />
-    <EmbeddedResource Include="Resources\doctor.png">
-      <IncludeInPackage>true</IncludeInPackage>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <None Include="Resources\doctor.jpg" />
+    <None Include="Resources\silent.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
