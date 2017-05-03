@@ -88,6 +88,7 @@
     <Compile Include="niceBullet.cs" />
     <None Include="Resources\doctor.jpg" />
     <None Include="Resources\silent.jpg" />
+    <None Include="Resources\dwt.wav" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

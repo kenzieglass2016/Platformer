@@ -40,8 +40,7 @@ namespace Assignment05
 		public static bool rendering = false;
 		public static bool updating = false;
 		public static bool resetting = false;
-		//public static SoundPlayer jukebox = new SoundPlayer(Properties.Resources.music);
-		//public static SoundPlayer phwoah = new SoundPlayer(Properties.Resources.phwoah);
+		//public static SoundPlayer theme = new SoundPlayer(Properties.Resources.dwt);
 
 		public Engine()
 		{
@@ -58,7 +57,6 @@ namespace Assignment05
 			canvas.add(rect);
 			canvas.add(text);
 			canvas.add(loss);
-			//parent.add(Program.elephant);
 		}
 
 		public static void reset()
