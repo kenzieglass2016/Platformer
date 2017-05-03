@@ -12,43 +12,51 @@ using System.Windows.Forms;
 
 namespace Assignment05
 {
-    public class Rectangle : Sprite
-    {
-        public int height;
-        public int width;
-        public Boolean visible;
-        public int opacity;
+	public class Rectangle : Sprite
+	{
+		public int height;
+		public int width;
+		public Boolean visible;
+		public int opacity;
+		public Color color = Color.FromArgb(200, Color.LawnGreen);
+		public static Color initColor = Color.FromArgb(200, Color.LawnGreen);
 
-        public Rectangle(int x, int y, int width, int height, int opacity)
-        {
-            X = x;
-            Y = y;
-            this.height = height;
-            this.width = width;
-            this.opacity = opacity;
-            visible = false;
-        }
 
-        public void setDimensions(int width, int height)
-        {
-            this.width = width;
-            this.height = height;
-        }
+		public Rectangle(int x, int y, int width, int height, int opacity)
+		{
+			X = x;
+			Y = y;
+			this.height = height;
+			this.width = width;
+			this.opacity = opacity;
+			visible = false;
+		}
 
-        public void setOpacity(int opacity)
-        {
-            this.opacity = opacity;
-        }
+		public void setDimensions(int width, int height)
+		{
+			this.width = width;
+			this.height = height;
+		}
 
-        public void setVisibility(Boolean visible)
-        {
-            this.visible = visible;
-        }
+		public void setOpacity(int opacity)
+		{
+			this.opacity = opacity;
+		}
 
-        public override void paint(Graphics g)
-        {
-            base.paint(g);
-            if (visible) g.FillRectangle(new SolidBrush(Color.FromArgb(opacity, Color.LawnGreen)), X, Y, width, height);
-        }
-    }
+		public void setVisibility(Boolean visible)
+		{
+			this.visible = visible;
+		}
+
+		public void setColor(Color color)
+		{
+			this.color = color;
+		}
+
+		public override void paint(Graphics g)
+		{
+			base.paint(g);
+			if (visible) g.FillRectangle(new SolidBrush(color), X, Y, width, height);
+		}
+	}
 }

@@ -49,7 +49,7 @@
     <Compile Include="Box.cs" />
     <Compile Include="Bullet.cs" />
     <Compile Include="CollisionSprite.cs" />
-    <Compile Include="Elephant.cs" />
+    <Compile Include="Doctor.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Engine.cs">
       <SubType>Form</SubType>
@@ -85,21 +85,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="niceBullet.cs" />
+    <None Include="Resources\dalek.png" />
+    <EmbeddedResource Include="Resources\doctor.png">
+      <IncludeInPackage>true</IncludeInPackage>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\json.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\box.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\elephant.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jason.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bullet.png" />

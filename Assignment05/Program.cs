@@ -19,7 +19,7 @@ namespace Assignment05
         [STAThread]
         static void Main()
         {
-            Program.canvas.csAdd(elephant);
+            Program.canvas.csAdd(doctor);
             /*List<int> xs = new List<int> { 000, 100, 200, 300, 400, 500, 000, 100, 200, 300, 400, 500, 000, 000, 000, 000, 500, 500, 500, 500 };
             List<int> ys = new List<int> { 500, 500, 500, 500, 500, 500, 000, 000, 000, 000, 000, 000, 100, 200, 300, 400, 100, 200, 300, 400 };
             for(int i = 0; i < xs.Count; i++) {
@@ -40,7 +40,7 @@ namespace Assignment05
                 box = new Box(1200, i * 100);
                 canvas.csAdd(box);
             }
-            Program.canvas.csAdd(jason);
+            Program.canvas.csAdd(dalek);
             Application.Run(new Program());
             /*Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
