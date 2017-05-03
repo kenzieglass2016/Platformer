@@ -15,7 +15,7 @@ namespace Assignment05
 	class niceBullet : PhysicsSprite
 	{
 		DateTime start;
-		TimeSpan lifetime = new TimeSpan(0, 0, 3);
+		TimeSpan lifetime = new TimeSpan(0, 0, 1, 50);
 
         public niceBullet(int x, int y) : base(Properties.Resources.bullet, x, y)
 		{
